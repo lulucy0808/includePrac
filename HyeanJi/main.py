@@ -102,7 +102,7 @@ def runGame():
             print('success')
             game_over = SUCCESS
 
-        #È­¸é ±×¸®±â
+        #ÃˆÂ­Â¸Ã© Â±Ã—Â¸Â®Â±Ã¢
 
         for brick in bricks:
             pygame.draw.rect(screen, GREEN, brick)
@@ -120,10 +120,10 @@ def runGame():
 
         if game_over > 0:
             if game_over == SUCCESS:
-                success_image = large_font.render('¼º°ø', True, RED)
+                success_image = large_font.render('Â¼ÂºÂ°Ã¸', True, RED)
                 screen.blit(success_image, success_image.get_rect(centerx=screen_width // 2, centery=screen_height // 2))
             elif game_over == FAILURE:
-                failure_image = large_font.render('½ÇÆĞ', True, RED)
+                failure_image = large_font.render('Â½Ã‡Ã†Ã', True, RED)
                 screen.blit(failure_image, failure_image.get_rect(centerx=screen_width // 2, centery=screen_height // 2))
 
         pygame.display.update()
